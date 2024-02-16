@@ -2,6 +2,7 @@
   "name": "feedback-api",
   "version": "1.0.0",
   "description": "Feedback API for the Corporate Comment App",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.17.4"
+    "fastify": "^4.26.1"
   }
 }
