@@ -1,7 +1,17 @@
 // Import the framework and instantiate it
 import Fastify from "fastify";
+import fastifyCors from "@fastify/cors";
+
 const fastify = Fastify({
   logger: true
+});
+
+// Register the CORS plugin
+// You can pass configuration options to the plugin, for example:
+fastify.register(fastifyCors, {
+  // Configure CORS options here
+  // For example, allowing requests from any origin:
+  origin: "*"
 });
 
 // Declare a route
