@@ -1,3 +1,7 @@
+import { injectSpeedInsights } from "@vercel/speed-insights";
+
+injectSpeedInsights();
+
 async function routes(fastify, options) {
   fastify.get("/", async (request, reply) => {
     return {
